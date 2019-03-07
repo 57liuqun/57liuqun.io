@@ -6,3 +6,15 @@ That’s because the -a flag includes all changed files. This is convenient, but
 
  If you want to rename a file in Git, you can run something like:
 --- git mv filename newname
+
+which shows the difference (the patch output) introduced in each commit.数字时限制显示的记录条数
+--- git log -p -2
+
+一行显示
+git log --pretty=oneline
+
+git log --pretty=format:"%h - %an, %ar : %s"
+69abe97 - zxm, 11 minutes ago : 一系列改动
+
+If you want to redo that commit, make the additional changes you forgot, stage them, and commit again using the --amend option:
+---git commit --amend
