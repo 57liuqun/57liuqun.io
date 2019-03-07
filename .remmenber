@@ -1,2 +1,8 @@
-To see what you’ve changed but not yet staged
+:To see what you’ve changed but not yet staged
 --- git diff
+
+That’s because the -a flag includes all changed files. This is convenient, but be careful; sometimes this flag will cause you to include unwanted changes.
+--- git -a -m commit "message"
+
+ If you want to rename a file in Git, you can run something like:
+--- git mv filename newname
