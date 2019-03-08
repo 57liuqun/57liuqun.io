@@ -18,3 +18,15 @@ git log --pretty=format:"%h - %an, %ar : %s"
 
 If you want to redo that commit, make the additional changes you forgot, stage them, and commit again using the --amend option:
 ---git commit --amend
+
+git remote -v
+查看已有的remote
+
+设置remote
+git remote add 名称 远程仓库地址
+
+If you want to push your master branch to your origin server (again, cloning generally sets up both of those names for you automatically), then you can run this to push any commits you’ve done back up to the server:
+--- git push 自己在remote时去的名称 master(主分支)
+
+
+(要在外岑那个文件夹执行这个操作，不然会报错，且使用之前要用   --- git remote  -v确定一下远程操作的别名)
